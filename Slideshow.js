@@ -12,6 +12,7 @@
 (function() {
     // this function looks a bit... IIFE!!!
     // goal is to guess the answer. So first, get the answer.
+    let botSpoilerMargin = 20; // bottom margin of image containing spoiler
     let answer = getAnswer();
     console.log(answer);
     const images = document.getElementsByClassName("whcdn content-fill");
@@ -23,7 +24,7 @@
     for (const pic of images){
         slideshow.url_List.push(pic.src);
         slideshow.width_List.push(pic.width);
-        slideshow.height_List.push(pic.height);
+        slideshow.height_List.push(pic.height-botSpoilerMargin);
     }
     removeAllChildNodes(document.body)
     renderAnswer(answer);
