@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         WikiHow Pictonary
+// @name         Slideshow
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  Get images from wikihow article as a slideshow. Guess the title based on the pictures.
